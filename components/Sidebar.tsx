@@ -13,7 +13,7 @@ const Sidebar = () => {
     <section className="sticky left-0 top-0 flex h-scren w-fit flex-col justify-between bg-dark-1 p-6 pt-28 text-white max-sm:hidden lg:W-[264]">
         <div className='flex flex-1 flex-col gap-6'>
             {SidebarLinks.map((link) => {
-                const isActive = pathname === link.route || pathname.startsWith(link.route);
+                const isActive = pathname === link.route || pathname.startsWith(`${link.route}/`);
 
                 return (
                     <Link 
